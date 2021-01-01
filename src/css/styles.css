@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252425;
+  color: white;
+}
+
+.color-emphasize {
+  color: #ee7233;
+}
+
+.color-gray {
+  color: #dedede;
+}
+
+.navbar {
+  background-color: #1b191b;
+  padding: 2rem 10rem;
+  box-sizing: border-box;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.navbar .nav-link {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+}
+.navbar .nav-link:hover {
+  border-bottom: solid #ee7233;
+}
+.navbar .active {
+  border-bottom: solid #ee7233;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.home-intro {
+  padding: 2rem 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home-intro-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 5rem;
+}
+.home-intro-text .icon-box {
+  margin-bottom: 1rem;
+}
+.home-intro-text .icon-box .icon {
+  padding-right: 1rem;
+}
+.home-intro-text #intro-describe {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #dedede;
+}
+.home-intro-text #bt-my-portfolio {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: #ee7233 solid 2px;
+  background-color: #252425;
+  color: white;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.home-intro-text #bt-my-portfolio:hover {
+  border: white solid 2px;
+}
+.home-intro-text #bt-play {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: #ee7233 solid 2px;
+  background-color: #ee7233;
+}
+.home-intro-text #bt-play:hover {
+  border: white solid 2px;
+}
+.home-intro .portraint {
+  padding-top: 4rem;
+}
+.home-intro .portraint #portraint-img {
+  width: 100%;
+}
+
+.portfolio {
+  background-color: #1b191b;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio .top-container {
+  width: 100%;
+  text-align: center;
+}
+.portfolio .top-container #portfolio-title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.portfolio .portfolio-main-container {
+  display: flex;
+}
+.portfolio .portfolio-main-container .left-container {
+  margin-top: 2rem;
+  width: 70%;
+}
+.portfolio .portfolio-main-container .left-container #portfolio-subtitle-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.portfolio .portfolio-main-container .left-container #portfolio-subtitle-container .portfolio-subtitle {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.portfolio .portfolio-main-container .left-container .timeline {
+  position: relative;
+}
+.portfolio .portfolio-main-container .left-container .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #ee7233;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.portfolio .portfolio-main-container .left-container .timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.portfolio .portfolio-main-container .left-container .timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: #1b191b;
+  border: 4px solid #ee7233;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.portfolio .portfolio-main-container .left-container .timeline-content {
+  padding: 20px 30px;
+  background-color: #252425;
+  position: relative;
+  border-radius: 6px;
+}
+.portfolio .portfolio-main-container .left-container .timeline-content #separater {
+  color: #ee7233;
+}
+.portfolio .portfolio-main-container .left-container .left {
+  left: 0;
+}
+.portfolio .portfolio-main-container .left-container .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #252425;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #252425;
+}
+.portfolio .portfolio-main-container .left-container .right {
+  left: 50%;
+}
+.portfolio .portfolio-main-container .left-container .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #252425;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #252425 transparent transparent;
+}
+.portfolio .portfolio-main-container .left-container .right::after {
+  left: -13px;
+}
+.portfolio .portfolio-main-container .right-container {
+  margin-top: 2rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.portfolio .portfolio-main-container .right-container .right-container-box {
+  margin-bottom: 4rem;
+  background-color: #252425;
+  border-radius: 6px;
+  padding: 2rem 2rem;
+}
+.portfolio .portfolio-main-container .right-container .portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .portfolio-main-container .right-container .portfolio-card #head-portraint-img {
+  width: 60%;
+  border-radius: 100px;
+}
+.portfolio .portfolio-main-container .right-container .portfolio-card #short-description {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.portfolio .portfolio-main-container .right-container .portfolio-card .icon {
+  margin: 0 0.5rem;
+}
+.portfolio .portfolio-main-container .right-container .portfolio-card #name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-box-title {
+  border-bottom: solid #ee7233;
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container {
+  padding-top: 2rem;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container .skill-item .skills-bar {
+  display: flex;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container .skill-item .skills-bar .bg-bar {
+  width: 100%;
+  border: 10px solid #ee7233;
+  border-radius: 5px;
+  opacity: 0.25;
+  position: relative;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container .skill-item .skills-bar .skill-bar {
+  position: absolute;
+  border: 10px solid #ee7233;
+  border-radius: 5px;
+  opacity: 1;
+  z-index: 1;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container .skill-item .skills-bar #skill-bar-1 {
+  width: 15%;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container .skill-item .skills-bar #skill-bar-2 {
+  width: 12%;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container .skill-item .skills-bar #skill-bar-3 {
+  width: 13%;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container .skill-item .skills-bar #skill-bar-4 {
+  width: 15%;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container .skill-item .skills-bar #skill-bar-5 {
+  width: 12%;
+}
+.portfolio .portfolio-main-container .right-container .skill-box .skill-container .skill-item .skills-bar #skill-bar-6 {
+  width: 10%;
+}
+
+.service {
+  background-color: #252425;
+  padding: 2rem 10rem;
+}
+.service .top-container {
+  width: 100%;
+  text-align: center;
+}
+.service .top-container #portfolio-title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.service .service-box {
+  background-color: #1b191b;
+}
+
+/*# sourceMappingURL=styles.css.map */
