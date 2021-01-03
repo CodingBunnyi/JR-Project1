@@ -9,33 +9,40 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <span class="navbar-brand">CodingBunny</span>
-              <div id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <span class="navbar-brand">CodingBunny</span>
+
+                    <div id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
         <main>
-            <div class="home-intro container">
+            <section class="home-intro container">
                 <div class="row">
                     <div class="home-intro-text col-lg-6">
                         <div class="icon-box">
@@ -43,8 +50,10 @@
                             <a href="#"><img class="icon" src="assets/twitter.svg" alt="twitter"></a>
                             <a href="#"><img class="icon" src="assets/instagram.svg" alt="instagram"></a>
                         </div>
+
                         <h1>I am Jay Chou</h1>
                         <p id="intro-describe">I am a Taiwanese singer, songwriter, rapper, record producer, actor, film director, businessman and magician. </p>
+                        
                         <div>
                             <button id="bt-my-portfolio">My Portfolio</button>
                             <button id="bt-play"><img id="play-icon"src="assets/play-fill.svg" alt="play icon"></button>
@@ -52,15 +61,16 @@
                     </div>
 
                     <div class="portraint col-lg-6">
-                        <img id="portraint-img" src="assets/Jay-Chou-Net-Worth-removebg.png" alt="Jay Chou portraint" >
+                        <img id="portraint-img" src="assets/Jay-Chou-Net-Worth-removebg.png" alt="Jay Chou portraint">
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="portfolio">
+            <section class="portfolio">
                 <div class="top-container">
                     <h2 id="portfolio-title">Portfolio<br>Showcase</h2>
                 </div>
+                
                 <div class="portfolio-main-container container">
                     <div class="row">
                         <div class="left-container col-xl-9">
@@ -103,7 +113,6 @@
                             </div>
                         </div>
                         
-
                         <div class="right-container col-xl-3">
                             <div class="portfolio-card right-container-box">
                                 <span id="name">Jay Chou</span><br>
@@ -122,24 +131,21 @@
                                     <div class="skill-item">
                                         <span class="skill-name">Web Design</span>
                                         <div class="skills-bar">                                       
-                                            <hr class="bg-bar">  
-                                            <hr class="skill-bar" id="skill-bar-1">                                     
+                                            <div class="bg-bar" id ="skill--webDesign"> </div>
                                         </div>
                                     </div>
 
                                     <div class="skill-item">
                                         <span class="skill-name">Graphic Design</span>
                                         <div class="skills-bar">                                       
-                                            <hr class="bg-bar">  
-                                            <hr class="skill-bar" id="skill-bar-2">                                     
+                                            <div class="bg-bar" id="skill--GraphicDesign"></div>                                      
                                         </div>
                                     </div>
 
                                     <div class="skill-item">
                                         <span class="skill-name">Print Design</span>
                                         <div class="skills-bar">                                       
-                                            <hr class="bg-bar">  
-                                            <hr class="skill-bar" id="skill-bar-3">                                     
+                                            <div class="bg-bar" id="skill--printDesign"></div>                                   
                                         </div>
                                     </div>
                                 </div>
@@ -151,24 +157,21 @@
                                     <div class="skill-item">
                                         <span class="skill-name">HTML Design</span>
                                         <div class="skills-bar">                                       
-                                            <hr class="bg-bar">  
-                                            <hr class="skill-bar" id="skill-bar-4">                                     
+                                            <div class="bg-bar" id="skill--htmlDesign"></div>                                    
                                         </div>
                                     </div>
 
                                     <div class="skill-item">
                                         <span class="skill-name">CSS Design</span>
                                         <div class="skills-bar">                                       
-                                            <hr class="bg-bar">  
-                                            <hr class="skill-bar" id="skill-bar-5">                                     
+                                            <div class="bg-bar" id="skill--cssDesign"></div>                                   
                                         </div>
                                     </div>
 
                                     <div class="skill-item">
                                         <span class="skill-name">JavaScript Design</span>
                                         <div class="skills-bar">                                       
-                                            <hr class="bg-bar">  
-                                            <hr class="skill-bar" id="skill-bar-6">                                     
+                                            <div class="bg-bar" id="skill--javaScriptDesign"></div>                                 
                                         </div>
                                     </div>
                                 </div>
@@ -176,48 +179,58 @@
                         </div> 
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="service">
+            <section class="service">
                 <div class="top-container">
                     <h2 id="portfolio-title">Services</h2>
                 </div>
+
                 <div class="container">
                     <div class="row">
-                      <div class="col-lg-4">
-                        <div class="service-box">
-                        1 of 3
+                        <div class="col-lg-4">
+                            <div class="service-box">
+                                1 of 3
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="service-box">
-                        2 of 3
+
+                        <div class="col-lg-4">
+                            <div class="service-box">
+                                2 of 3
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="service-box">
-                        3 of 3
+
+                        <div class="col-lg-4">
+                            <div class="service-box">
+                                3 of 3
+                            </div>
                         </div>
-                      </div>
                     </div>
+
                     <div class="row">
-                      <div class="col-lg-4">
-                        <div class="service-box">
-                        1 of 3
+                        <div class="col-lg-4">
+                            <div class="service-box">
+                                1 of 3
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="service-box">
-                        2 of 3
+
+                        <div class="col-lg-4">
+                            <div class="service-box">
+                                2 of 3
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="service-box">
-                        3 of 3
-                      </div>
+
+                        <div class="col-lg-4">
+                                <div class="service-box">
+                            3 of 3
+                        </div>
                     </div>
-                  </div>
-            </div>
+                </div>
+            </section>
         </main>
+
+        <footer>
+            © 2020 All rights reserved. Designed by CodingBunny
+        </footer>
     </body>
 </html>
