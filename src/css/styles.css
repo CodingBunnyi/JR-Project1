@@ -15,10 +15,25 @@ body {
   color: #dedede;
 }
 
+section {
+  padding: 2rem 10rem !important;
+}
+
+.section-title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .navbar {
   background-color: #1b191b;
   padding: 2rem 10rem;
   box-sizing: border-box;
+}
+.navbar .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 .navbar .navbar-brand {
   font-weight: bold;
@@ -38,16 +53,12 @@ body {
   border-bottom: solid #ee7233;
 }
 
-h1 {
+.home-intro {
+  display: flex;
+}
+.home-intro h1 {
   font-weight: bold;
   font-size: 4rem;
-}
-
-.home-intro {
-  padding: 2rem 10rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 .home-intro-text {
   display: flex;
@@ -96,19 +107,12 @@ h1 {
 
 .portfolio {
   background-color: #1b191b;
-  padding: 2rem 10rem;
   display: flex;
   flex-direction: column;
 }
 .portfolio .top-container {
   width: 100%;
   text-align: center;
-}
-.portfolio .top-container #portfolio-title {
-  font-size: 4rem;
-  font-weight: bold;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .portfolio .portfolio-main-container {
   display: flex;
@@ -238,6 +242,9 @@ h1 {
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
+.portfolio .portfolio-main-container .right-container .skill-box h3 {
+  font-weight: bold;
+}
 .portfolio .portfolio-main-container .right-container .skill-box .skill-container {
   padding-top: 1rem;
 }
@@ -291,22 +298,24 @@ h1 {
 
 .service {
   background-color: #252425;
-  padding: 2rem 10rem;
 }
 .service .top-container {
   width: 100%;
   text-align: center;
 }
-.service .top-container #portfolio-title {
-  font-size: 4rem;
-  font-weight: bold;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.service .services-box {
+  padding: 1rem;
 }
 .service .service-box {
+  height: 100%;
   background-color: #1b191b;
-  height: 34rem;
-  margin-top: 2rem;
+  border-radius: 6px;
+  padding: 3rem;
+}
+.service .service-box h3 {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

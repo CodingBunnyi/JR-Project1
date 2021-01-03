@@ -22,11 +22,26 @@ body {
     color: $default-color-gray;
 }
 
+section {
+    padding: $overall-padding !important;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 //nav bar
 .navbar {
     background-color: $bg-color-dark;
     padding: $overall-padding;
     box-sizing:border-box;
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .navbar-brand {
         font-weight: bold;
         font-size: 1.7rem;
@@ -48,22 +63,17 @@ body {
     }
 }
 
-//intro page
-h1 {
-    font-weight: bold;
-    font-size: 4rem;
-}
-
+//intro section
 .home-intro {
-    padding: $overall-padding;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    h1 {
+        font-weight: bold;
+        font-size: 4rem;
+    }
     &-text{
         display: flex;
         flex-direction:column;
         justify-content: center;
-        // padding-right: 5rem;
         .icon-box {
             margin-bottom: 1rem;
             .icon{
@@ -108,21 +118,15 @@ h1 {
     }
 }
 
-//portfolio
+//portfolio section
 .portfolio {
     background-color: $bg-color-dark;
-    padding: $overall-padding;
     display: flex;
     flex-direction: column;
     .top-container {
         width: 100%;
         text-align: center;
-        #portfolio-title {
-            font-size: 4rem;
-            font-weight: bold;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
+        
     }
         .portfolio-main-container{
             display: flex;
@@ -141,7 +145,6 @@ h1 {
                 }
             }
 
-            // width: 70%;
             .timeline {
                 position: relative;
                 &::after {
@@ -261,13 +264,16 @@ h1 {
                     font-weight: bold;
                     padding-bottom: 0.5rem;
                 }
+                h3 {
+                    font-weight: bold;
+                }
 
                 .skill-container {
                     padding-top: 1rem;
                     .skill-item {
                         margin: 1rem 0;
                         .skill-name {
-                            font-size: 1rem;;
+                            font-size: 1rem;
                         }
                         .skills-bar{
                             display: flex;
@@ -325,24 +331,28 @@ h1 {
     }
 }
 
+//service section
 .service {
     background-color: $bg-color-light;
-    padding: $overall-padding;
     .top-container {
         width: 100%;
         text-align: center;
-        #portfolio-title {
-            font-size: 4rem;
-            font-weight: bold;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
+    }
+
+    .services-box {
+        padding: 1rem;
     }
 
     .service-box {
+        height: 100%;
         background-color: $bg-color-dark;
-        height: 34rem;
-        margin-top: 2rem;
+        border-radius: 6px;
+        padding: 3rem;
+        h3 {
+            margin-top: 1rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
     }
 }
 
