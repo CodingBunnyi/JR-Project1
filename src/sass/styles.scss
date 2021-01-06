@@ -33,7 +33,28 @@ section {
     padding-bottom: 2rem;
 }
 
+.button__color--orange {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: $emphasize-color solid 2px;
+    background-color: $emphasize-color;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        border: white solid 2px;
+        transition: 0.3s;
+    }
+}
+
 //nav bar
+nav {
+    position: fixed !important;
+    width: 100%;
+    z-index: 2;
+}
+#navbarNav {
+    justify-content: flex-end;
+}
 .navbar {
     background-color: $bg-color-dark;
     padding: $overall-padding;
@@ -46,6 +67,9 @@ section {
         font-weight: bold;
         font-size: 1.7rem;
     }
+    .navbar-toggler {
+        color: white;
+    }
 
     .nav-link {
         padding-right: 1rem !important;
@@ -54,18 +78,23 @@ section {
         font-size: 1.3rem;
         color: $default-color;
         &:hover {
-            border-bottom: solid $emphasize-color;
+            color: $emphasize-color;
+            transition: 0.3s;
         }
     }
 
     .active{
-        border-bottom: solid $emphasize-color;
+        color: $emphasize-color;
     }
 }
 
 //intro section
 .home-intro {
     display: flex;
+
+    .lg-padding-top {
+        padding-top:7rem;
+    }
     h1 {
         font-weight: bold;
         font-size: 4rem;
@@ -87,26 +116,21 @@ section {
             color: $default-color-gray;
         }
 
-        #bt-my-portfolio {
-            margin-top: 1rem;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            border: $emphasize-color solid 2px;
-            background-color: $bg-color-light;
-            color: $default-color;
-            font-weight: bold;
-            margin-right: 1rem;
-            &:hover {
-                border: white solid 2px;
-            }
-        }
-        #bt-play {
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            border: $emphasize-color solid 2px;
-            background-color: $emphasize-color;
-            &:hover {
-                border: white solid 2px;
+        .portfolio-buttons {
+            margin-top: 2rem;
+            #bt-my-portfolio {
+                padding: 1rem 2rem;
+                border-radius: 50px;
+                border: $emphasize-color solid 2px;
+                background-color: $bg-color-light;
+                color: $default-color;
+                font-weight: bold;
+                margin-right: 1rem;
+                text-decoration: none;
+                &:hover {
+                    background-color: $emphasize-color;
+                    transition: 0.3s;
+                }
             }
         }
     }
@@ -347,13 +371,66 @@ section {
         height: 100%;
         background-color: $bg-color-dark;
         border-radius: 6px;
-        padding: 3rem;
+        padding: 2rem;
         h3 {
             margin-top: 1rem;
             font-weight: bold;
             font-size: 1.5rem;
         }
     }
+}
+
+//bolg section
+.blog {
+    background-color: $bg-color-dark;
+    .top-container {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+//contact section
+.contact {
+    background-color: $bg-color-dark;
+    .top-container {
+        width: 100%;
+        text-align: center;
+    }
+    .contact-info-box {
+        padding: 1rem;
+        .contact-info {
+            height: 100%;
+            background-color: $bg-color-light;
+            border-radius: 6px;
+            padding: 2rem;
+            display: flex;
+    
+            &--text {
+                display: inline;
+                padding-left: 1rem;
+                h3 {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        
+    }
+
+    .form-input {
+        width: 100%;
+        background-color:$bg-color-light;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 6px;
+        color: white;
+    }
+
+    textarea {
+        min-height: 200px;
+    }
+
 }
 
 

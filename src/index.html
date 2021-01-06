@@ -13,37 +13,37 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <span class="navbar-brand">CodingBunny</span>
-
-                    <div id="navbarNav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><img src="assets/list-task.svg" alt="toggler icon"></span>
+                      </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link active" href="#home">Home</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link" href="#service">Services</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            
         </header>
 
         <main>
-            <section class="home-intro">
-                <div class="container">
+            <section class="home-intro" id="home">
+                <div class="container lg-padding-top" >
                     <div class="row">
                         <div class="home-intro-text col-lg-6">
                             <div class="icon-box">
@@ -53,11 +53,11 @@
                             </div>
 
                             <h1>I am Jay Chou</h1>
-                            <p id="intro-describe">I am a Taiwanese singer, songwriter, rapper, record producer, actor, film director, businessman and magician. </p>
+                            <p id="intro-describe" class="color-gray">I am a Taiwanese singer, songwriter, rapper, record producer, actor, film director, businessman and magician. </p>
                             
-                            <div>
-                                <button id="bt-my-portfolio">My Portfolio</button>
-                                <button id="bt-play"><img id="play-icon"src="assets/play-fill.svg" alt="play icon"></button>
+                            <div class="portfolio-buttons">
+                                <a id="bt-my-portfolio" href="#portfolio">My Portfolio</a>
+                                <a class="button__color--orange"><img id="play-icon"src="assets/play-fill.svg" alt="play icon"></a>
                             </div>
                         </div>
 
@@ -68,14 +68,14 @@
                 </div>
             </section>
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="top-container">
                     <h2 class="section-title">Portfolio<br>Showcase</h2>
                 </div>
                 
                 <div class="portfolio-main-container container">
                     <div class="row">
-                        <div class="left-container col-xl-9">
+                        <div class="left-container col-xl-8">
                             <div id="portfolio-subtitle-container">
                                 <span class="portfolio-subtitle">Education</span><span class="portfolio-subtitle">Experience</span>
                             </div>
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                         
-                        <div class="right-container col-xl-3">
+                        <div class="right-container col-xl-4">
                             <div class="portfolio-card right-container-box">
                                 <span id="name">Jay Chou</span><br>
                                 <img id="head-portraint-img"src="assets/head-portraint-img.jpg" alt="jay chou head portraint"><br>
@@ -183,7 +183,7 @@
                 </div>
             </section>
 
-            <section class="service">
+            <section class="service" id="service">
                 <div class="top-container">
                     <h2 class="section-title">Services</h2>
                 </div>
@@ -194,7 +194,7 @@
                             <div class="service-box">
                                 <img src="assets/camera-fill.svg" alt="camera">
                                 <h3>Services</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, vero commodi officia incidunt,</p>
+                                <p class="color-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, vero commodi officia incidunt,</p>
                             </div>
                         </div>
 
@@ -202,7 +202,7 @@
                             <div class="service-box">
                                 <img src="assets/github.svg" alt="github">
                                 <h3>Services</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elita incidunt,</p>
+                                <p class="color-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elita incidunt,</p>
                             </div>
                         </div>
 
@@ -210,17 +210,15 @@
                             <div class="service-box">
                                 <img src="assets/printer-fill.svg" alt="printer">
                                 <h3>Services</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing ete, vero commodi officia incidunt,</p>
+                                <p class="color-gray">Lorem ipsum, dolor sit amet consectetur adipisicing ete, vero commodi officia incidunt,</p>
                             </div>
                         </div>
-                    
-
                     
                         <div class="col-xl-4 col-lg-6 services-box">
                             <div class="service-box">
                                 <img src="assets/table.svg" alt="table">
                                 <h3>Services</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed sit nihil harum. Ab ad sunt culpa omnis? Nobis inventore fuga itaque, </p>
+                                <p class="color-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed sit nihil harum. Ab ad sunt culpa omnis? Nobis inventore fuga itaque, </p>
                             </div>
                         </div>
 
@@ -228,23 +226,100 @@
                             <div class="service-box">
                                 <img src="assets/window.svg" alt="window">
                                 <h3>Services</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, </p>
+                                <p class="color-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, </p>
                             </div>
                         </div>
 
                         <div class="col-xl-4 col-lg-6 services-box">
-                                <div class="service-box">
-                                    <img src="assets/wrench.svg" alt="wrench">
-                                    <h3>Services</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, vero commount,</p>
+                            <div class="service-box">
+                                <img src="assets/wrench.svg" alt="wrench">
+                                <h3>Services</h3>
+                                <p class="color-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, vero commount,</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- <section class="blog">
+                <div class="top-container">
+                    <h2 class="section-title">Blog</h2>
+                </div>
+            </section> -->
+
+            <section class="contact" id="contact">
+                <div class="top-container">
+                    <h2 class="section-title">Contact</h2>
+                </div>   
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 contact-info-box">
+                            <div class="contact-info">
+                                <img src ="assets/geo-alt-fill.svg" alt="location">
+                                <div class="contact-info--text">
+                                    <h3>Locate us</h3>
+                                    <span>16 Edmondstone St, South Brisbane</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6 contact-info-box">
+                            <div class="contact-info">
+                                <img src ="assets/telephone-fill.svg" alt="telephone">
+                                <div class="contact-info--text">
+                                    <h3>Give us a call</h3>
+                                    <span>Office: +01-2345-6789</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6 contact-info-box">
+                            <div class="contact-info">
+                                <img src ="assets/envelope-fill.svg" alt="envelope">
+                                <div class="contact-info--text">
+                                    <h3>Get in online</h3>
+                                    <span>contact@example.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6 contact-info-box">
+                                <input type="text" class="form-input" id="inputName" placeholder="Your Name">
+                            </div>
+
+                            <div class="col-lg-6 contact-info-box">
+                                <input type="text" class="form-input" id="inputEmail" placeholder="Your Email">
+                            </div>
+
+                            <div class="col-lg-12 contact-info-box">
+                                <input type="text" class="form-input" id="inputSubject" placeholder="Your Subject">
+                            </div>
+
+                            <div class="col-lg-12 contact-info-box">
+                                <textarea id="message" name="message" class="form-input" placeholder="Your Message"></textarea>
+                            </div>
+                            
+                            <div class="col-lg-3 contact-info-box">
+                                <button class="button__color--orange">Send Message</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+                
             </section>
         </main>
 
         <footer>
             © 2020 All rights reserved. Designed by CodingBunny
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
 </html>
